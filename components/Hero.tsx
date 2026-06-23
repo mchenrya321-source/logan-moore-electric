@@ -2,37 +2,40 @@ import Image from "next/image";
 import Link from "next/link";
 import { BUSINESS } from "@/lib/constants";
 import CallButton from "./CallButton";
+import HeroBackground from "./HeroBackground";
 
 export default function Hero() {
   return (
     <section
       id="home"
-      className="relative overflow-hidden bg-white pt-[4.75rem] sm:pt-28 lg:pt-32"
+      className="relative overflow-hidden pt-[4.75rem] sm:pt-28 lg:pt-32"
     >
-      <div className="absolute inset-0 -z-10 bg-gradient-to-br from-gray-light via-white to-white" />
-      <div className="absolute right-0 top-0 -z-10 h-96 w-96 rounded-full bg-navy/5 blur-3xl" />
+      <div className="absolute inset-0" aria-hidden="true">
+        <HeroBackground />
+        <div className="absolute inset-0 bg-navy/65" />
+        <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-b from-transparent to-navy sm:h-32" />
+      </div>
 
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-3 flex justify-center lg:hidden">
           <Image
             src="/logo.png"
             alt="Logan Moore Electric LLC"
             width={260}
             height={260}
-            className="h-auto w-[240px] max-w-[85vw] object-contain"
-            priority
+            className="h-auto w-[240px] max-w-[85vw] object-contain drop-shadow-md"
           />
         </div>
 
-        <div className="grid items-center gap-6 pb-8 pt-1 sm:gap-10 sm:pb-16 sm:pt-8 lg:grid-cols-2 lg:gap-16 lg:pb-24 lg:pt-12">
+        <div className="grid items-center gap-6 pb-10 pt-1 sm:gap-10 sm:pb-16 sm:pt-8 lg:grid-cols-2 lg:gap-16 lg:pb-24 lg:pt-12">
           <div className="animate-fade-in-up text-center lg:text-left">
-            <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-brand-red sm:mb-4 sm:text-sm">
+            <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-red-300 sm:mb-4 sm:text-sm">
               Rayville, Louisiana
             </p>
-            <h1 className="text-[1.425rem] font-bold leading-tight tracking-tight text-navy sm:text-4xl lg:text-5xl xl:text-[3.25rem]">
+            <h1 className="text-[1.425rem] font-bold leading-tight tracking-tight text-white sm:text-4xl lg:text-5xl xl:text-[3.25rem]">
               Trusted Electrical Services in Northeast Louisiana
             </h1>
-            <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-gray-muted sm:mt-5 sm:text-lg lg:mx-0">
+            <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-white/85 sm:mt-5 sm:text-lg lg:mx-0">
               Residential, commercial, new construction, remodels, and service
               calls from a local Rayville electrical company.
             </p>
@@ -40,11 +43,11 @@ export default function Hero() {
             <div className="mt-5 flex flex-col items-stretch gap-3 sm:mt-8 sm:flex-row sm:items-center sm:justify-center sm:gap-4 lg:justify-start">
               <CallButton
                 size="large"
-                className="w-full shadow-lg ring-2 ring-brand-red/15 sm:w-auto sm:shadow-md sm:ring-0"
+                className="w-full shadow-lg ring-2 ring-white/20 sm:w-auto sm:shadow-md sm:ring-0"
               />
               <Link
                 href="#contact"
-                className="inline-flex items-center justify-center rounded-lg border-2 border-navy px-6 py-3.5 text-base font-semibold text-navy transition-all duration-200 hover:bg-navy hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy sm:px-8 sm:py-4 sm:text-lg"
+                className="inline-flex items-center justify-center rounded-lg border-2 border-white/80 px-6 py-3.5 text-base font-semibold text-white transition-all duration-200 hover:bg-white hover:text-navy focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:px-8 sm:py-4 sm:text-lg"
               >
                 Free Estimate
               </Link>
@@ -52,7 +55,7 @@ export default function Hero() {
 
             <a
               href={BUSINESS.phoneTel}
-              className="mt-3 inline-flex items-center justify-center gap-2 text-base font-bold text-navy transition-colors hover:text-brand-red sm:mt-5 sm:justify-start sm:text-xl lg:justify-start"
+              className="mt-3 inline-flex items-center justify-center gap-2 text-base font-bold text-white transition-colors hover:text-red-300 sm:mt-5 sm:justify-start sm:text-xl lg:justify-start"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -73,15 +76,14 @@ export default function Hero() {
 
           <div className="animate-fade-in-up animate-delay-200 hidden justify-center lg:flex lg:justify-end">
             <div className="relative w-full max-w-md">
-              <div className="absolute -inset-4 rounded-2xl bg-gradient-to-br from-navy/10 to-brand-red/10 blur-sm" />
-              <div className="relative rounded-2xl border border-gray-border bg-white p-8 shadow-xl">
+              <div className="absolute -inset-4 rounded-2xl bg-white/10 blur-sm" />
+              <div className="relative rounded-2xl border border-white/20 bg-white p-8 shadow-xl">
                 <Image
                   src="/logo.png"
                   alt="Logan Moore Electric LLC"
                   width={400}
                   height={400}
                   className="mx-auto h-auto w-full max-w-[280px] object-contain sm:max-w-[320px]"
-                  priority
                 />
                 <div className="mt-6 border-t border-gray-border pt-6 text-center">
                   <p className="text-sm font-medium text-gray-muted">
