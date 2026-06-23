@@ -27,7 +27,7 @@ export default function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-5">
+    <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5">
       <div>
         <label htmlFor="name" className="block text-sm font-medium text-navy">
           Name
@@ -38,7 +38,7 @@ export default function ContactForm() {
           name="name"
           required
           autoComplete="name"
-          className="mt-1.5 w-full rounded-lg border border-gray-border bg-white px-4 py-3 text-navy transition-colors focus:border-navy focus:outline-none focus:ring-2 focus:ring-navy/20"
+          className="mt-1 w-full rounded-lg border border-gray-border bg-white px-3 py-2.5 text-navy transition-colors focus:border-navy focus:outline-none focus:ring-2 focus:ring-navy/20 sm:mt-1.5 sm:px-4 sm:py-3"
           placeholder="Your name"
         />
       </div>
@@ -53,7 +53,7 @@ export default function ContactForm() {
           name="phone"
           required
           autoComplete="tel"
-          className="mt-1.5 w-full rounded-lg border border-gray-border bg-white px-4 py-3 text-navy transition-colors focus:border-navy focus:outline-none focus:ring-2 focus:ring-navy/20"
+          className="mt-1 w-full rounded-lg border border-gray-border bg-white px-3 py-2.5 text-navy transition-colors focus:border-navy focus:outline-none focus:ring-2 focus:ring-navy/20 sm:mt-1.5 sm:px-4 sm:py-3"
           placeholder="(318) 555-0123"
         />
       </div>
@@ -68,7 +68,7 @@ export default function ContactForm() {
           name="email"
           required
           autoComplete="email"
-          className="mt-1.5 w-full rounded-lg border border-gray-border bg-white px-4 py-3 text-navy transition-colors focus:border-navy focus:outline-none focus:ring-2 focus:ring-navy/20"
+          className="mt-1 w-full rounded-lg border border-gray-border bg-white px-3 py-2.5 text-navy transition-colors focus:border-navy focus:outline-none focus:ring-2 focus:ring-navy/20 sm:mt-1.5 sm:px-4 sm:py-3"
           placeholder="you@example.com"
         />
       </div>
@@ -84,8 +84,8 @@ export default function ContactForm() {
           id="project-details"
           name="project-details"
           required
-          rows={4}
-          className="mt-1.5 w-full resize-y rounded-lg border border-gray-border bg-white px-4 py-3 text-navy transition-colors focus:border-navy focus:outline-none focus:ring-2 focus:ring-navy/20"
+          rows={3}
+          className="mt-1 w-full resize-y rounded-lg border border-gray-border bg-white px-3 py-2.5 text-navy transition-colors focus:border-navy focus:outline-none focus:ring-2 focus:ring-navy/20 sm:mt-1.5 sm:px-4 sm:py-3"
           placeholder="Tell us about your electrical project or service need..."
         />
       </div>

@@ -3,17 +3,17 @@ import CallButton from "./CallButton";
 
 export default function About() {
   return (
-    <section id="about" className="bg-white py-16 sm:py-20 lg:py-24">
+    <section id="about" className="bg-white py-10 sm:py-20 lg:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+        <div className="grid items-center gap-8 sm:gap-12 lg:grid-cols-2 lg:gap-16">
           <div>
             <p className="text-sm font-semibold uppercase tracking-wider text-brand-red">
               About Us
             </p>
-            <h2 className="mt-3 text-3xl font-bold text-navy sm:text-4xl">
+            <h2 className="mt-2 text-2xl font-bold text-navy sm:mt-3 sm:text-4xl">
               Your Local Rayville Electrical Company
             </h2>
-            <div className="mt-6 space-y-4 text-base leading-relaxed text-gray-muted sm:text-lg">
+            <div className="mt-4 space-y-3 text-sm leading-relaxed text-gray-muted sm:mt-6 sm:space-y-4 sm:text-lg">
               <p>
                 Logan Moore Electric LLC is a locally owned electrical company
                 based in Rayville, Louisiana. We serve homeowners and businesses
@@ -31,14 +31,14 @@ export default function About() {
                 Serving {BUSINESS.serviceArea}.
               </p>
             </div>
-            <div className="mt-8">
-              <CallButton />
+            <div className="mt-5 sm:mt-8">
+              <CallButton className="w-full shadow-lg sm:w-auto sm:shadow-md" />
             </div>
           </div>
 
-          <div className="rounded-2xl border border-gray-border bg-gray-light p-8 sm:p-10">
-            <h3 className="text-xl font-bold text-navy">What We Stand For</h3>
-            <ul className="mt-6 space-y-4">
+          <div className="rounded-2xl border border-gray-border bg-gray-light p-5 sm:p-8 lg:p-10">
+            <h3 className="text-lg font-bold text-navy sm:text-xl">What We Stand For</h3>
+            <ul className="mt-4 space-y-3 sm:mt-6 sm:space-y-4">
               {[
                 "Dependable work you can count on",
                 "Clear communication from start to finish",

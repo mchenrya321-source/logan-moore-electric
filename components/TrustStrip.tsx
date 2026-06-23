@@ -4,7 +4,7 @@ export default function TrustStrip() {
   return (
     <section className="border-y border-gray-border bg-navy text-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <ul className="grid grid-cols-1 gap-4 py-8 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4 lg:py-10">
+        <ul className="grid grid-cols-1 gap-3 py-5 sm:grid-cols-2 sm:gap-6 sm:py-8 lg:grid-cols-4 lg:py-10">
           {TRUST_BADGES.map((badge) => (
             <li
               key={badge}

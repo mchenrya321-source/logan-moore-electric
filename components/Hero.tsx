@@ -7,30 +7,33 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative overflow-hidden bg-white pt-24 sm:pt-28 lg:pt-32"
+      className="relative overflow-hidden bg-white pt-[4.75rem] sm:pt-28 lg:pt-32"
     >
       <div className="absolute inset-0 -z-10 bg-gradient-to-br from-gray-light via-white to-white" />
       <div className="absolute right-0 top-0 -z-10 h-96 w-96 rounded-full bg-navy/5 blur-3xl" />
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid items-center gap-10 pb-16 pt-8 lg:grid-cols-2 lg:gap-16 lg:pb-24 lg:pt-12">
+        <div className="grid items-center gap-6 pb-8 pt-4 sm:gap-10 sm:pb-16 sm:pt-8 lg:grid-cols-2 lg:gap-16 lg:pb-24 lg:pt-12">
           <div className="animate-fade-in-up text-center lg:text-left">
-            <p className="mb-4 text-sm font-semibold uppercase tracking-wider text-brand-red">
+            <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-brand-red sm:mb-4 sm:text-sm">
               Rayville, Louisiana
             </p>
-            <h1 className="text-3xl font-bold leading-tight tracking-tight text-navy sm:text-4xl lg:text-5xl xl:text-[3.25rem]">
+            <h1 className="text-[1.65rem] font-bold leading-tight tracking-tight text-navy sm:text-4xl lg:text-5xl xl:text-[3.25rem]">
               Trusted Electrical Services in Northeast Louisiana
             </h1>
-            <p className="mx-auto mt-5 max-w-xl text-base leading-relaxed text-gray-muted sm:text-lg lg:mx-0">
+            <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-gray-muted sm:mt-5 sm:text-lg lg:mx-0">
               Residential, commercial, new construction, remodels, and service
               calls from a local Rayville electrical company.
             </p>
 
-            <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center lg:justify-start">
-              <CallButton size="large" />
+            <div className="mt-5 flex flex-col items-stretch gap-3 sm:mt-8 sm:flex-row sm:items-center sm:justify-center sm:gap-4 lg:justify-start">
+              <CallButton
+                size="large"
+                className="w-full shadow-lg ring-2 ring-brand-red/15 sm:w-auto sm:shadow-md sm:ring-0"
+              />
               <Link
                 href="#contact"
-                className="inline-flex items-center justify-center rounded-lg border-2 border-navy px-8 py-4 text-base font-semibold text-navy transition-all duration-200 hover:bg-navy hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy sm:text-lg"
+                className="inline-flex items-center justify-center rounded-lg border-2 border-navy px-6 py-3.5 text-base font-semibold text-navy transition-all duration-200 hover:bg-navy hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy sm:px-8 sm:py-4 sm:text-lg"
               >
                 Free Estimate
               </Link>
@@ -38,7 +41,7 @@ export default function Hero() {
 
             <a
               href={BUSINESS.phoneTel}
-              className="mt-5 inline-flex items-center gap-2 text-lg font-bold text-navy transition-colors hover:text-brand-red sm:text-xl"
+              className="mt-3 inline-flex items-center justify-center gap-2 text-base font-bold text-navy transition-colors hover:text-brand-red sm:mt-5 sm:justify-start sm:text-xl lg:justify-start"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +60,7 @@ export default function Hero() {
             </a>
           </div>
 
-          <div className="animate-fade-in-up animate-delay-200 flex justify-center lg:justify-end">
+          <div className="animate-fade-in-up animate-delay-200 hidden justify-center lg:flex lg:justify-end">
             <div className="relative w-full max-w-md">
               <div className="absolute -inset-4 rounded-2xl bg-gradient-to-br from-navy/10 to-brand-red/10 blur-sm" />
               <div className="relative rounded-2xl border border-gray-border bg-white p-8 shadow-xl">

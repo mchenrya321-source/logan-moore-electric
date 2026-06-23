@@ -80,6 +80,15 @@ export const SERVICES = [
   },
 ] as const;
 
+export const MOBILE_SERVICE_TITLES = [
+  "Residential Electrical",
+  "Commercial Electrical",
+  "Panel Upgrades",
+  "Lighting Installation",
+  "Troubleshooting & Repairs",
+  "Service Calls",
+] as const;
+
 export const WHY_CHOOSE_US = [
   {
     title: "Fast Response",

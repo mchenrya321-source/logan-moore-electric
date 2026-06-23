@@ -2,10 +2,10 @@ import { BUSINESS } from "@/lib/constants";
 
 export default function MobileCallBar() {
   return (
-    <div className="fixed inset-x-0 bottom-0 z-50 border-t border-gray-border bg-white p-3 shadow-[0_-4px_20px_rgba(0,0,0,0.08)] md:hidden">
+    <div className="fixed inset-x-0 bottom-0 z-50 border-t border-gray-border bg-white px-3 py-2 shadow-[0_-4px_20px_rgba(0,0,0,0.1)] md:hidden">
       <a
         href={BUSINESS.phoneTel}
-        className="flex w-full items-center justify-center gap-2 rounded-lg bg-brand-red px-6 py-3.5 text-base font-bold text-white shadow-md transition-colors hover:bg-brand-red-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-red"
+        className="flex w-full items-center justify-center gap-2 rounded-lg bg-brand-red px-4 py-3.5 text-base font-bold text-white shadow-lg transition-colors hover:bg-brand-red-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-red"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
