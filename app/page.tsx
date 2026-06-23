@@ -5,7 +5,6 @@ import Gallery from "@/components/Gallery";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import MapSection from "@/components/MapSection";
-import MobileCallBar from "@/components/MobileCallBar";
 import Services from "@/components/Services";
 import TrustStrip from "@/components/TrustStrip";
 import WhyChooseUs from "@/components/WhyChooseUs";
@@ -25,7 +24,6 @@ export default function Home() {
         <MapSection />
       </main>
       <Footer />
-      <MobileCallBar />
     </>
   );
 }
