@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { BUSINESS, NAV_LINKS } from "@/lib/constants";
 import CallButton from "./CallButton";
+import FacebookLink from "./FacebookLink";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -66,7 +67,8 @@ export default function Header() {
           ))}
         </nav>
 
-        <div className="hidden lg:block">
+        <div className="hidden items-center gap-3 lg:flex">
+          <FacebookLink />
           <CallButton />
         </div>
 
@@ -103,6 +105,9 @@ export default function Header() {
               <p className="mt-2 text-center text-sm text-gray-muted">
                 {BUSINESS.phone}
               </p>
+              <div className="mt-4 flex justify-center">
+                <FacebookLink />
+              </div>
             </div>
           </nav>
         </div>

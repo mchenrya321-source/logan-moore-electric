@@ -1,6 +1,7 @@
 import { BUSINESS } from "@/lib/constants";
 import CallButton from "./CallButton";
 import ContactForm from "./ContactForm";
+import FacebookLink from "./FacebookLink";
 
 export default function Contact() {
   return (
@@ -34,8 +35,9 @@ export default function Contact() {
               <ContactItem label="Location" value={BUSINESS.locationShort} />
             </div>
 
-            <div className="mt-8">
+            <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-center">
               <CallButton size="large" />
+              <FacebookLink variant="button" />
             </div>
           </div>
 

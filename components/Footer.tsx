@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { BUSINESS } from "@/lib/constants";
+import FacebookLink from "./FacebookLink";
 
 export default function Footer() {
   return (
@@ -43,7 +44,20 @@ export default function Footer() {
                   {BUSINESS.email}
                 </a>
               </li>
+              <li>
+                <a
+                  href={BUSINESS.facebookUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-colors hover:text-brand-red"
+                >
+                  {BUSINESS.facebook}
+                </a>
+              </li>
             </ul>
+            <div className="mt-4">
+              <FacebookLink variant="icon-light" />
+            </div>
           </div>
 
           <div className="sm:col-span-2 lg:col-span-2">

@@ -6,7 +6,8 @@ export const BUSINESS = {
   location: "Rayville, Louisiana",
   locationShort: "Rayville, LA",
   facebook: "Logan Moore Electric LLC",
-  facebookUrl: "https://www.facebook.com/search/top?q=Logan%20Moore%20Electric%20LLC",
+  facebookUrl:
+    "https://www.facebook.com/p/Logan-Moore-Electric-LLC-61574066243461/",
   serviceArea:
     "Rayville, Delhi, Monroe, West Monroe, Start, Mangham, Winnsboro, Richland Parish, Ouachita Parish, and Northeast Louisiana",
 } as const;
