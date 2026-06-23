@@ -13,12 +13,23 @@ export default function Hero() {
       <div className="absolute right-0 top-0 -z-10 h-96 w-96 rounded-full bg-navy/5 blur-3xl" />
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid items-center gap-6 pb-8 pt-4 sm:gap-10 sm:pb-16 sm:pt-8 lg:grid-cols-2 lg:gap-16 lg:pb-24 lg:pt-12">
+        <div className="mb-3 flex justify-center lg:hidden">
+          <Image
+            src="/logo.png"
+            alt="Logan Moore Electric LLC"
+            width={260}
+            height={260}
+            className="h-auto w-[240px] max-w-[85vw] object-contain"
+            priority
+          />
+        </div>
+
+        <div className="grid items-center gap-6 pb-8 pt-1 sm:gap-10 sm:pb-16 sm:pt-8 lg:grid-cols-2 lg:gap-16 lg:pb-24 lg:pt-12">
           <div className="animate-fade-in-up text-center lg:text-left">
             <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-brand-red sm:mb-4 sm:text-sm">
               Rayville, Louisiana
             </p>
-            <h1 className="text-[1.65rem] font-bold leading-tight tracking-tight text-navy sm:text-4xl lg:text-5xl xl:text-[3.25rem]">
+            <h1 className="text-[1.425rem] font-bold leading-tight tracking-tight text-navy sm:text-4xl lg:text-5xl xl:text-[3.25rem]">
               Trusted Electrical Services in Northeast Louisiana
             </h1>
             <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-gray-muted sm:mt-5 sm:text-lg lg:mx-0">
